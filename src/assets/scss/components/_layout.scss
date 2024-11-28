@@ -1,0 +1,11 @@
+.layout {
+}
+#content {
+  flex-grow: 1;
+  overflow-y: auto;
+  padding: 1rem;
+}
+#navbar {
+  width: 22rem;
+  height: 100%;
+}

@@ -1,0 +1,90 @@
+@import "../variables";
+
+.navbar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 40px;
+  background-color: $color-main;
+  width: 100%;
+  height: 6.5rem;
+
+  h1 {
+    color: $color-white;
+    font-family: "Great Vibes";
+    font-size: 50px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+
+  h2 {
+    color: $color-white;
+    font-family: "Great Vibes";
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+
+  .router-link {
+    text-decoration: none;
+    color: $color-white; /* Removes the underline */
+  }
+
+  .route-buttons {
+    display: flex;
+    gap: 50px;
+  }
+
+  #categories {
+    font-family: "Faustina";
+    padding: 10px;
+    font-size: 18px;
+    font-weight: 400;
+    background-color: transparent;
+    color: $color-white;
+    border: 0;
+  }
+  #categories option {
+    color: black;
+    background-color: $color-white;
+  }
+  .navbar-search {
+    display: flex;
+    align-items: center;
+    border-radius: 5px;
+    input {
+      font-family: "Faustina";
+      padding: 5px 25rem;
+      font-size: 22px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      text-align: center;
+      height: 40px;
+    }
+  }
+
+  .navbar-buttons {
+    display: flex;
+
+    button {
+      font-family: "Faustina";
+      margin-left: 10px;
+      padding: 5px 10px;
+      font-size: 16px;
+      border: 1px solid $color-main;
+      border-radius: 4px;
+      background-color: $color-white;
+      color: $color-main;
+      cursor: pointer;
+
+      &:hover {
+        background-color: $color-main;
+        border: 1px solid $color-white;
+        color: $color-white;
+      }
+    }
+  }
+}
